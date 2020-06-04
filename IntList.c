@@ -124,7 +124,7 @@ void IntListInsertInOrder (IntList L, int v)
 	// General insert
 	} else {
 		// We want curr to be the node before insertion
-		while (curr && curr->next && (v >= curr->next->data)) {
+		while (curr && curr->next && (v > curr->next->data)) {
 			curr = curr->next;
 		}
 		// We want to insert between curr and curr->next
