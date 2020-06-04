@@ -38,7 +38,7 @@ In general, initially random inputs took significantly longer to compute compare
 | General: No Duplicates | 196.256 |	0.021 |
 | General: With Duplicates | 197.348 | 0.022 |
 
-*Please note: Graphs for the six different initial conditions can be found in "sort_results.xlsx".*
+*Please note: Graphs for the six different initial conditions can be found in [sort_results.xlsx](sort_results.xlsx).*
 
 ## Discussion
 As explained above, insertion sort is a rather inefficient method of sorting. UNIX sort, using a merge sort algorithm, triumphs useIntSort in computation time due to the algorithmic efficiency of divide-and-conquer (a thorough explanation can be found in my [Fourier Transforms Project Report](https://github.com/axieax/fourier/)).
