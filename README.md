@@ -22,7 +22,7 @@ As expected, the UNIX sort algorithm sorted the number inputs significantly fast
 
 On the other hand, the UNIX sort algorithm uses an [External R-Way Merge Sort](http://vkundeti.blogspot.com/2008/03/tech-algorithmic-details-of-unix-sort.html) with a computational complexity of 𝒪((N/M)log(N/M)/log(R)). Analysing the graph below, I initially tried a ![#be69bd](https://via.placeholder.com/15/be69bd/000000?text=+) linear proportional model, which seemed to fit the curve pretty well. However, investigating the computational complexity of a regular merge sort algorithm, which is 𝒪(𝑛log𝑛) using divide-and-conquer techniques, I obtained a better model with ![#32a7a5](https://via.placeholder.com/15/32a7a5/000000?text=+) nlog(n) (having a lower RMSE value). It is difficult to determine the algorithm model based on the current dataset due to the small values of time obtained for the input sizes of 5000 to 250000. Further trials are necessary for a better model, especially with larger input sizes with larger values for time. 
 
-![Average Results](/images/sort_avg_model.png)
+![Average Results](/images/sort_average_model.png)
 
 ### Further Observations:
 In general, initially random inputs took significantly longer to compute compared to initially sorted and reversed inputs. For useIntSort, initially reversed inputs were slightly faster than initially sorted ones, and vice versa for UNIX sort. Furthermore, duplicate inputs seemed to take slightly longer to compute.
