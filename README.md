@@ -49,5 +49,5 @@ As expected, useIntSort dealt with sorted and reversed inputs faster than random
 ### UNIX sort
 With the merge sort algorithm, sorted and reversed inputs would be faster than initially random inputs as each subdivision would be sorted faster, requiring less sorting each time. Initially sorted inputs would be faster than the reversed inputs since the lowest-level subdivisions are already sorted, unlike the reversed ones which would have to be sorted at each level, although less sorting is required than for initially random inputs.
 
-### Regarding Duplicates
+### With or Without Duplicates?
 Whether the input has duplicates or not should not affect the computation time of either programs. Upon review, I realised that my [useIntList.c](useIntList.c) could have been more efficient by inserting before a duplicate value instead of always after, which would have resolved the slight difference in computation time between the inputs with and without duplicate values. Furthermore, the difference in computation time for UNIX sort is negligible.
