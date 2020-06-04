@@ -110,7 +110,7 @@ void IntListInsertInOrder (IntList L, int v)
 		L->size++;
 	
 	// v less than first
-	} else if (v < curr->data) {
+	} else if (v <= curr->data) {
 		// New head
 		new->next = L->first;
 		L->first = new;
