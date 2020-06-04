@@ -11,7 +11,12 @@ More information about the task can be found [here](https://cgi.cse.unsw.edu.au/
 1. Now we can process this file in Microsoft Excel, copying the contents of "results.txt" into the specified table format, taking use of the Special Paste: Transform function. Here, we can calculate the average time and create graphs demonstrating the results. We can also create a Tab-delimited Text file as per task specifications. 
 
 ## The Results
+![Average Results](/images/average_results.png)
 
+As expected, the UNIX sort algorithm sorted the number inputs in significantly faster times compared to the useIntList program. useIntList creates a new linked list and inserts each number into the right position in ascending order, using the insertion sort algorithm. This has a computation complexity of 𝒪(𝑛<sup>2</sup>) with 𝑛 representing the input size, as each number to be inserted is compared to the other n values in order to determine where it should be inserted, which is very inefficient. This can be seen by the curve
 
+![Average Results](/images/useIntList_avg_results.png)
+
+*Please note: Graphs for the six different initial conditions can be found in "sort_results.xlsx".*
 
 ## Discussion
