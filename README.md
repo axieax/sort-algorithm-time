@@ -1,4 +1,4 @@
-# Computation Time comparison between useIntSort and UNIX sort algorithms
+# Computation Time Comparison Between useIntSort and UNIX sort Algorithms
 
 ## The Task
 The task involves completing the program useIntList.c, which reads and sorts a list of integers using linked lists and insertion sort. We are then required to compare the average computation time of useIntList to the UNIX sort command.
