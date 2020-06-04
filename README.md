@@ -20,7 +20,7 @@ As expected, the UNIX sort algorithm sorted the number inputs significantly fast
 
 ![Average Results](/images/useIntList_avg.png)
 
-On the other hand, the UNIX sort algorithm uses an [External R-Way Merge Sort](http://vkundeti.blogspot.com/2008/03/tech-algorithmic-details-of-unix-sort.html) with a computational complexity of 𝒪((N/M)log(N/M)/log(R)). Analysing the graph below, I initially tried a ![#be69bd](https://via.placeholder.com/15/be69bd/000000?text=+) linear proportional model, which seemed to fit the curve pretty well. However, investigating the computational complexity of a regular merge sort algorithm, which is 𝒪(𝑛log𝑛) using divide-and-conquer techniques, I obtained a better model with ![#32a7a5](https://via.placeholder.com/15/32a7a5/000000?text=+) nlog(n) (having a lower RMSE value). It is difficult to determine the algorithm model based on the dataset due to the small values of time obtained for the input sizes of 5000 to 250000. Further trials are necessary for a better model, especially with larger input sizes with larger values for time. 
+On the other hand, the UNIX sort algorithm uses an [External R-Way Merge Sort](http://vkundeti.blogspot.com/2008/03/tech-algorithmic-details-of-unix-sort.html) with a computational complexity of 𝒪((N/M)log(N/M)/log(R)). Analysing the graph below, I initially tried a ![#be69bd](https://via.placeholder.com/15/be69bd/000000?text=+) linear proportional model, which seemed to fit the curve pretty well. However, investigating the computational complexity of a regular merge sort algorithm, which is 𝒪(𝑛log𝑛) using divide-and-conquer techniques, I obtained a better model with ![#32a7a5](https://via.placeholder.com/15/32a7a5/000000?text=+) nlog(n) (having a lower RMSE value). It is difficult to determine the algorithm model based on the current dataset due to the small values of time obtained for the input sizes of 5000 to 250000. Further trials are necessary for a better model, especially with larger input sizes with larger values for time. 
 
 ![Average Results](/images/sort_avg_model.png)
 
@@ -38,21 +38,13 @@ In general, initially random inputs took significantly longer to compute compare
 | General: No Duplicates | 196.256 |	0.021 |
 | General: With Duplicates | 197.348 | 0.022 |
 
-
-Linear for sorted/reversed
-Quadratic for random
-
 *Please note: Graphs for the six different initial conditions can be found in "sort_results.xlsx".*
 
 ## Discussion
-As explained above, insertion sort is a rather inefficient method of sorting. UNIX sort, using a merge sort algorithm, triumphs useIntSort in terms of computation time due to the algorithmic efficiences of divide-and-conquer (a thorough explanation can be found in my [Fourier Transforms Project Report](https://github.com/axieax/fourier/)).
+As explained above, insertion sort is a rather inefficient method of sorting. UNIX sort, using a merge sort algorithm, triumphs useIntSort in computation time due to the algorithmic efficiency of divide-and-conquer (a thorough explanation can be found in my [Fourier Transforms Project Report](https://github.com/axieax/fourier/)).
 
 ### useIntSort
-As expected, useIntSort dealt with sorted and reversed inputs faster than random inputs. This is because the program needs to only update the start or end of the linked list instead of traversing through the entire list and finding the appropriate position to insert each number. It was surprising to see that reversed inputs were faster than sorted inputs. However, reviewing my logic, it seems that each number is compared to the front of the linked list first as the first `if` condition, before checking the end of the list, justifying why initally sorted inputs (which add to the end) required extra computation and thus, extra time. Duplicate?
+As expected, useIntSort dealt with sorted and reversed inputs faster than random inputs. This is because the program needs to only update the start or end of the linked list instead of traversing through the entire list and finding the appropriate position to insert each number. It was surprising to see that reversed inputs were faster than sorted inputs. However, reviewing my logic, it seems that each number is compared to the front of the linked list first as the first `if` condition, before checking the end of the list, justifying why initally sorted inputs (which add to the end) required extra computation and thus, extra time.
 
 ### UNIX sort
-With the merge sort algorithm, sorted and reversed inputs would be faster than initially random inputs as each subdivision would be sorted faster, requiring less sorting each time. Initially sorted inputs would be faster than the reversed inputs since the lowest-level subdivisions are already sorted, unlike the reversed ones which would have to be sorted at each level, although less sorting is required than for initially random inputs. 
-
-Ms - subdivision sorted faster
-Reversed fastest - don't need to go as far to insert in linked list
-Don't need to change head
+With the merge sort algorithm, sorted and reversed inputs would be faster than initially random inputs as each subdivision would be sorted faster, requiring less sorting each time. Initially sorted inputs would be faster than the reversed inputs since the lowest-level subdivisions are already sorted, unlike the reversed ones which would have to be sorted at each level, although less sorting is required than for initially random inputs.
