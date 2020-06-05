@@ -18,7 +18,7 @@ useIntSort uses an insertion sort algorithm, which is not very efficient compare
   <img width="460" height="300" src="/images/sort_comparison.png">
 </p>
 
-As expected, the UNIX sort algorithm sorted the number inputs significantly faster than the useIntList program. The general insertion sort algorithm has a computational complexity of 𝒪(𝑛<sup>2</sup>) with 𝑛 representing the input size, as each number to be inserted is compared to the other n values in order to determine where it should be inserted, which is very inefficient. This can be seen by the curve below which fits a quadratic model (modelled using Vernier Logger Pro 3).
+As expected, the UNIX sort algorithm sorted the number inputs significantly faster than the useIntList program. The general insertion sort algorithm has a computational complexity of 𝒪(𝑛<sup>2</sup>) with 𝑛 representing the input size, as each number to be inserted is compared to the other n values in order to determine where it should be inserted, which is very inefficient. This can be seen by the curve below which fits a quadratic model.
 
 useIntSort Model           |  UNIX sort Model
 :-------------------------:|:-------------------------:
