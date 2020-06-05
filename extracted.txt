@@ -1,0 +1,744 @@
+============================= N = 5000 =============================
+====================== Random No Duplicates ======================
+- useIntList Trial 1:
+user	0m0.116s
+user	0m0.120s
+user	0m0.132s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.000s
+user	0m0.000s
+
+====================== Sorted No Duplicates ======================
+- useIntList Trial 1:
+user	0m0.056s
+user	0m0.056s
+user	0m0.056s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.000s
+user	0m0.000s
+
+====================== Reverse No Duplicates ======================
+- useIntList Trial 1:
+user	0m0.056s
+user	0m0.056s
+user	0m0.056s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.000s
+user	0m0.000s
+
+====================== Random With Duplicates ======================
+- useIntList Trial 1:
+user	0m0.116s
+user	0m0.116s
+user	0m0.116s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.000s
+user	0m0.000s
+
+====================== Sorted With Duplicates ======================
+- useIntList Trial 1:
+user	0m0.056s
+user	0m0.056s
+user	0m0.056s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.000s
+user	0m0.000s
+
+====================== Reverse With Duplicates ======================
+- useIntList Trial 1:
+user	0m0.056s
+user	0m0.056s
+user	0m0.056s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.000s
+user	0m0.000s
+
+
+============================= N = 10000 =============================
+====================== Random No Duplicates ======================
+- useIntList Trial 1:
+user	0m0.580s
+user	0m0.600s
+user	0m0.576s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.004s
+user	0m0.004s
+
+====================== Sorted No Duplicates ======================
+- useIntList Trial 1:
+user	0m0.220s
+user	0m0.220s
+user	0m0.220s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.000s
+user	0m0.000s
+
+====================== Reverse No Duplicates ======================
+- useIntList Trial 1:
+user	0m0.220s
+user	0m0.220s
+user	0m0.220s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.000s
+user	0m0.000s
+
+====================== Random With Duplicates ======================
+- useIntList Trial 1:
+user	0m0.620s
+user	0m0.620s
+user	0m0.580s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.004s
+user	0m0.000s
+
+====================== Sorted With Duplicates ======================
+- useIntList Trial 1:
+user	0m0.220s
+user	0m0.220s
+user	0m0.224s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.000s
+user	0m0.000s
+
+====================== Reverse With Duplicates ======================
+- useIntList Trial 1:
+user	0m0.220s
+user	0m0.220s
+user	0m0.220s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.000s
+user	0m0.000s
+
+
+============================= N = 20000 =============================
+====================== Random No Duplicates ======================
+- useIntList Trial 1:
+user	0m3.908s
+user	0m3.856s
+user	0m3.876s
+- sort Trial 1:
+user	0m0.004s
+user	0m0.008s
+user	0m0.008s
+
+====================== Sorted No Duplicates ======================
+- useIntList Trial 1:
+user	0m0.884s
+user	0m0.872s
+user	0m0.872s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.004s
+user	0m0.004s
+
+====================== Reverse No Duplicates ======================
+- useIntList Trial 1:
+user	0m0.880s
+user	0m0.876s
+user	0m0.876s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.004s
+user	0m0.000s
+
+====================== Random With Duplicates ======================
+- useIntList Trial 1:
+user	0m3.856s
+user	0m3.868s
+user	0m3.844s
+- sort Trial 1:
+user	0m0.004s
+user	0m0.008s
+user	0m0.008s
+
+====================== Sorted With Duplicates ======================
+- useIntList Trial 1:
+user	0m0.880s
+user	0m0.884s
+user	0m0.912s
+- sort Trial 1:
+user	0m0.004s
+user	0m0.000s
+user	0m0.000s
+
+====================== Reverse With Duplicates ======================
+- useIntList Trial 1:
+user	0m0.884s
+user	0m0.876s
+user	0m0.880s
+- sort Trial 1:
+user	0m0.000s
+user	0m0.004s
+user	0m0.004s
+
+
+============================= N = 40000 =============================
+====================== Random No Duplicates ======================
+- useIntList Trial 1:
+user	0m20.836s
+user	0m21.068s
+user	0m20.844s
+- sort Trial 1:
+user	0m0.016s
+user	0m0.012s
+user	0m0.012s
+
+====================== Sorted No Duplicates ======================
+- useIntList Trial 1:
+user	0m3.512s
+user	0m3.516s
+user	0m3.492s
+- sort Trial 1:
+user	0m0.004s
+user	0m0.004s
+user	0m0.004s
+
+====================== Reverse No Duplicates ======================
+- useIntList Trial 1:
+user	0m3.504s
+user	0m3.488s
+user	0m3.496s
+- sort Trial 1:
+user	0m0.008s
+user	0m0.008s
+user	0m0.004s
+
+====================== Random With Duplicates ======================
+- useIntList Trial 1:
+user	0m21.188s
+user	0m21.388s
+user	0m21.424s
+- sort Trial 1:
+user	0m0.016s
+user	0m0.016s
+user	0m0.016s
+
+====================== Sorted With Duplicates ======================
+- useIntList Trial 1:
+user	0m3.484s
+user	0m3.484s
+user	0m3.492s
+- sort Trial 1:
+user	0m0.008s
+user	0m0.008s
+user	0m0.004s
+
+====================== Reverse With Duplicates ======================
+- useIntList Trial 1:
+user	0m3.480s
+user	0m3.488s
+user	0m3.512s
+- sort Trial 1:
+user	0m0.004s
+user	0m0.008s
+user	0m0.004s
+
+
+============================= N = 50000 =============================
+====================== Random No Duplicates ======================
+- useIntList Trial 1:
+user	0m33.816s
+user	0m34.376s
+user	0m34.576s
+- sort Trial 1:
+user	0m0.020s
+user	0m0.020s
+user	0m0.016s
+
+====================== Sorted No Duplicates ======================
+- useIntList Trial 1:
+user	0m5.444s
+user	0m5.488s
+user	0m5.480s
+- sort Trial 1:
+user	0m0.008s
+user	0m0.008s
+user	0m0.004s
+
+====================== Reverse No Duplicates ======================
+- useIntList Trial 1:
+user	0m5.448s
+user	0m5.484s
+user	0m5.448s
+- sort Trial 1:
+user	0m0.008s
+user	0m0.008s
+user	0m0.008s
+
+====================== Random With Duplicates ======================
+- useIntList Trial 1:
+user	0m34.828s
+user	0m34.872s
+user	0m34.208s
+- sort Trial 1:
+user	0m0.016s
+user	0m0.012s
+user	0m0.020s
+
+====================== Sorted With Duplicates ======================
+- useIntList Trial 1:
+user	0m5.480s
+user	0m5.444s
+user	0m5.472s
+- sort Trial 1:
+user	0m0.008s
+user	0m0.004s
+user	0m0.008s
+
+====================== Reverse With Duplicates ======================
+- useIntList Trial 1:
+user	0m5.460s
+user	0m5.448s
+user	0m5.484s
+- sort Trial 1:
+user	0m0.008s
+user	0m0.008s
+user	0m0.008s
+
+
+============================= N = 60000 =============================
+====================== Random No Duplicates ======================
+- useIntList Trial 1:
+user	0m51.308s
+user	0m50.576s
+user	0m51.552s
+- sort Trial 1:
+user	0m0.020s
+user	0m0.024s
+user	0m0.024s
+
+====================== Sorted No Duplicates ======================
+- useIntList Trial 1:
+user	0m7.892s
+user	0m7.872s
+user	0m7.812s
+- sort Trial 1:
+user	0m0.008s
+user	0m0.004s
+user	0m0.008s
+
+====================== Reverse No Duplicates ======================
+- useIntList Trial 1:
+user	0m7.900s
+user	0m7.840s
+user	0m7.832s
+- sort Trial 1:
+user	0m0.012s
+user	0m0.008s
+user	0m0.004s
+
+====================== Random With Duplicates ======================
+- useIntList Trial 1:
+user	0m51.368s
+user	0m51.356s
+user	0m50.816s
+- sort Trial 1:
+user	0m0.020s
+user	0m0.020s
+user	0m0.024s
+
+====================== Sorted With Duplicates ======================
+- useIntList Trial 1:
+user	0m7.876s
+user	0m7.896s
+user	0m7.884s
+- sort Trial 1:
+user	0m0.008s
+user	0m0.004s
+user	0m0.008s
+
+====================== Reverse With Duplicates ======================
+- useIntList Trial 1:
+user	0m7.864s
+user	0m7.840s
+user	0m7.832s
+- sort Trial 1:
+user	0m0.012s
+user	0m0.008s
+user	0m0.012s
+
+
+============================= N = 80000 =============================
+====================== Random No Duplicates ======================
+- useIntList Trial 1:
+user	1m34.688s
+user	1m36.884s
+user	1m35.776s
+- sort Trial 1:
+user	0m0.028s
+user	0m0.028s
+user	0m0.032s
+
+====================== Sorted No Duplicates ======================
+- useIntList Trial 1:
+user	0m14.024s
+user	0m13.988s
+user	0m13.996s
+- sort Trial 1:
+user	0m0.012s
+user	0m0.008s
+user	0m0.012s
+
+====================== Reverse No Duplicates ======================
+- useIntList Trial 1:
+user	0m13.928s
+user	0m13.920s
+user	0m13.924s
+- sort Trial 1:
+user	0m0.016s
+user	0m0.012s
+user	0m0.012s
+
+====================== Random With Duplicates ======================
+- useIntList Trial 1:
+user	1m35.804s
+user	1m36.600s
+user	1m35.332s
+- sort Trial 1:
+user	0m0.032s
+user	0m0.032s
+user	0m0.032s
+
+====================== Sorted With Duplicates ======================
+- useIntList Trial 1:
+user	0m13.888s
+user	0m13.980s
+user	0m13.916s
+- sort Trial 1:
+user	0m0.012s
+user	0m0.012s
+user	0m0.012s
+
+====================== Reverse With Duplicates ======================
+- useIntList Trial 1:
+user	0m13.972s
+user	0m13.924s
+user	0m13.928s
+- sort Trial 1:
+user	0m0.016s
+user	0m0.016s
+user	0m0.012s
+
+
+============================= N = 90000 =============================
+====================== Random No Duplicates ======================
+- useIntList Trial 1:
+user	2m2.952s
+user	2m1.916s
+user	2m3.044s
+- sort Trial 1:
+user	0m0.040s
+user	0m0.036s
+user	0m0.036s
+
+====================== Sorted No Duplicates ======================
+- useIntList Trial 1:
+user	0m17.612s
+user	0m17.772s
+user	0m17.636s
+- sort Trial 1:
+user	0m0.012s
+user	0m0.016s
+user	0m0.012s
+
+====================== Reverse No Duplicates ======================
+- useIntList Trial 1:
+user	0m17.720s
+user	0m17.612s
+user	0m17.728s
+- sort Trial 1:
+user	0m0.016s
+user	0m0.016s
+user	0m0.016s
+
+====================== Random With Duplicates ======================
+- useIntList Trial 1:
+user	2m3.392s
+user	2m2.568s
+user	2m2.816s
+- sort Trial 1:
+user	0m0.032s
+user	0m0.036s
+user	0m0.036s
+
+====================== Sorted With Duplicates ======================
+- useIntList Trial 1:
+user	0m17.712s
+user	0m17.616s
+user	0m17.748s
+- sort Trial 1:
+user	0m0.012s
+user	0m0.016s
+user	0m0.012s
+
+====================== Reverse With Duplicates ======================
+- useIntList Trial 1:
+user	0m17.728s
+user	0m17.760s
+user	0m17.592s
+- sort Trial 1:
+user	0m0.020s
+user	0m0.012s
+user	0m0.008s
+
+
+============================= N = 100000 =============================
+====================== Random No Duplicates ======================
+- useIntList Trial 1:
+user	2m34.760s
+user	2m32.556s
+user	2m34.216s
+- sort Trial 1:
+user	0m0.036s
+user	0m0.036s
+user	0m0.032s
+
+====================== Sorted No Duplicates ======================
+- useIntList Trial 1:
+user	0m21.720s
+user	0m21.920s
+user	0m21.880s
+- sort Trial 1:
+user	0m0.012s
+user	0m0.016s
+user	0m0.016s
+
+====================== Reverse No Duplicates ======================
+- useIntList Trial 1:
+user	0m21.868s
+user	0m21.868s
+user	0m21.752s
+- sort Trial 1:
+user	0m0.016s
+user	0m0.020s
+user	0m0.020s
+
+====================== Random With Duplicates ======================
+- useIntList Trial 1:
+user	2m32.664s
+user	2m32.100s
+user	2m33.264s
+- sort Trial 1:
+user	0m0.040s
+user	0m0.040s
+user	0m0.040s
+
+====================== Sorted With Duplicates ======================
+- useIntList Trial 1:
+user	0m21.744s
+user	0m21.868s
+user	0m21.856s
+- sort Trial 1:
+user	0m0.012s
+user	0m0.016s
+user	0m0.016s
+
+====================== Reverse With Duplicates ======================
+- useIntList Trial 1:
+user	0m21.872s
+user	0m21.736s
+user	0m21.880s
+- sort Trial 1:
+user	0m0.016s
+user	0m0.020s
+user	0m0.016s
+
+
+============================= N = 150000 =============================
+====================== Random No Duplicates ======================
+- useIntList Trial 1:
+user	6m5.468s
+user	6m7.256s
+user	6m2.072s
+- sort Trial 1:
+user	0m0.064s
+user	0m0.064s
+user	0m0.064s
+
+====================== Sorted No Duplicates ======================
+- useIntList Trial 1:
+user	0m49.392s
+user	0m48.908s
+user	0m48.916s
+- sort Trial 1:
+user	0m0.016s
+user	0m0.024s
+user	0m0.024s
+
+====================== Reverse No Duplicates ======================
+- useIntList Trial 1:
+user	0m49.212s
+user	0m49.064s
+user	0m49.220s
+- sort Trial 1:
+user	0m0.024s
+user	0m0.020s
+user	0m0.024s
+
+====================== Random With Duplicates ======================
+- useIntList Trial 1:
+user	6m5.016s
+user	6m7.804s
+user	6m1.128s
+- sort Trial 1:
+user	0m0.064s
+user	0m0.064s
+user	0m0.056s
+
+====================== Sorted With Duplicates ======================
+- useIntList Trial 1:
+user	0m48.900s
+user	0m49.540s
+user	0m48.988s
+- sort Trial 1:
+user	0m0.020s
+user	0m0.016s
+user	0m0.024s
+
+====================== Reverse With Duplicates ======================
+- useIntList Trial 1:
+user	0m49.216s
+user	0m48.928s
+user	0m49.236s
+- sort Trial 1:
+user	0m0.032s
+user	0m0.032s
+user	0m0.032s
+
+
+============================= N = 200000 =============================
+====================== Random No Duplicates ======================
+- useIntList Trial 1:
+user	12m6.184s
+user	12m32.012s
+user	12m31.040s
+- sort Trial 1:
+user	0m0.088s
+user	0m0.084s
+user	0m0.088s
+
+====================== Sorted No Duplicates ======================
+- useIntList Trial 1:
+user	1m27.728s
+user	1m28.124s
+user	1m27.708s
+- sort Trial 1:
+user	0m0.036s
+user	0m0.028s
+user	0m0.028s
+
+====================== Reverse No Duplicates ======================
+- useIntList Trial 1:
+user	1m27.736s
+user	1m27.112s
+user	1m27.976s
+- sort Trial 1:
+user	0m0.036s
+user	0m0.024s
+user	0m0.032s
+
+====================== Random With Duplicates ======================
+- useIntList Trial 1:
+user	12m10.668s
+user	12m25.420s
+user	12m30.444s
+- sort Trial 1:
+user	0m0.080s
+user	0m0.088s
+user	0m0.096s
+
+====================== Sorted With Duplicates ======================
+- useIntList Trial 1:
+user	1m28.460s
+user	1m27.144s
+user	1m27.000s
+- sort Trial 1:
+user	0m0.028s
+user	0m0.036s
+user	0m0.028s
+
+====================== Reverse With Duplicates ======================
+- useIntList Trial 1:
+user	1m27.140s
+user	1m27.348s
+user	1m28.144s
+- sort Trial 1:
+user	0m0.036s
+user	0m0.044s
+user	0m0.036s
+
+
+============================= N = 250000 =============================
+====================== Random No Duplicates ======================
+- useIntList Trial 1:
+user	20m42.680s
+user	20m34.220s
+user	20m51.904s
+- sort Trial 1:
+user	0m0.112s
+user	0m0.108s
+user	0m0.124s
+
+====================== Sorted No Duplicates ======================
+- useIntList Trial 1:
+user	2m16.136s
+user	2m16.060s
+user	2m15.900s
+- sort Trial 1:
+user	0m0.036s
+user	0m0.040s
+user	0m0.024s
+
+====================== Reverse No Duplicates ======================
+- useIntList Trial 1:
+user	2m16.088s
+user	2m16.884s
+user	2m16.940s
+- sort Trial 1:
+user	0m0.048s
+user	0m0.040s
+user	0m0.048s
+
+====================== Random With Duplicates ======================
+- useIntList Trial 1:
+user	20m43.168s
+user	20m46.476s
+user	20m36.088s
+- sort Trial 1:
+user	0m0.120s
+user	0m0.112s
+user	0m0.120s
+
+====================== Sorted With Duplicates ======================
+- useIntList Trial 1:
+user	2m16.340s
+user	2m16.088s
+user	2m17.100s
+- sort Trial 1:
+user	0m0.040s
+user	0m0.036s
+user	0m0.040s
+
+====================== Reverse With Duplicates ======================
+- useIntList Trial 1:
+user	2m16.952s
+user	2m16.008s
+user	2m16.088s
+- sort Trial 1:
+user	0m0.048s
+user	0m0.052s
+user	0m0.052s
+
+
