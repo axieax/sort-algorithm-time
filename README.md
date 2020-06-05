@@ -35,8 +35,12 @@ In general, initially random inputs took significantly longer to compute compare
 | Initially Random with Duplicates | 235.998 | 0.036 |
 | Initially Sorted with Duplicates | 28.720 |	0.013 |
 | Initially Reversed with Duplicates | 28.704 | 0.016 |
+| | | |
 | General: No Duplicates | 97.872 |	0.021 |
 | General: With Duplicates | 97.807 | 0.022 |
+| General: Initially Random |	236.087 |	0.036 |
+| General: Initially Sorted	| 28.712 | 0.012 |
+| Initially Reversed | 28.719 | 0.015 |
 
 *Please note: Graphs for the six different initial conditions can be found in [sort_results.xlsx](sort_results.xlsx).*
 
