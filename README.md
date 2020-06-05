@@ -34,17 +34,13 @@ useIntSort Initial Conditions Comparison |  UNIX sort Initial Conditions Compari
 :-------------------------:|:-------------------------:
 ![](/images/useIntSort_initial.png)  |  ![](/images/unix_initial.png)
 
-
 *Please note: More graphs can be found in [sort_results.xlsx](sort_results.xlsx) in the "Analysis" worksheet.*
 
 ## Discussion
-As explained above, insertion sort is a rather inefficient method of sorting. UNIX sort, using a merge sort algorithm, triumphs useIntSort in computation time due to the algorithmic efficiency of divide-and-conquer (a thorough explanation can be found in my [Fourier Transforms Project Report](https://github.com/axieax/fourier/)).
+As explained above, insertion sort is a rather inefficient method of sorting. UNIX sort, using a merge sort algorithm, triumphs useIntSort in computation time due to the algorithmic efficiency of divide-and-conquer (a thorough explanation can be found in my [Fourier Transforms Project Report](https://github.com/axieax/fourier/)). 
 
 ### useIntSort
-As expected, useIntSort dealt with sorted and reversed inputs faster than random inputs. This is because the program needs to only update the start or end of the linked list instead of traversing through the entire list and finding the appropriate position to insert each number. It was surprising to see that reversed inputs were faster than sorted inputs. However, reviewing my logic, it seems that each number is compared to the front of the linked list first as the first `if` condition, before checking the end of the list, justifying why initally sorted inputs (which add to the end) required extra computation and thus, extra time.
+As expected, useIntSort dealt with sorted and reversed inputs significantly faster than random inputs. This is because the program needs to only update the start or end of the linked list instead of traversing through the entire list and finding the appropriate position to insert each number. It was surprising to see that reversed inputs were actually slightly slower than sorted ones, as there should be less computing required so they should be faster. Although I anticipated a somewhat linear time for sorted and reversed inputs, graph analysis suggests that an 𝒪(𝑛<sup>2</sup>) model was a better fit. I thought that if the inputs were initially reversed, there would only need to be a single comparison to the start of the list (and an extra one for the end of the list for sorted inputs), resulting in an 𝒪(𝑛) complexity.
 
 ### UNIX sort
 With the merge sort algorithm, sorted and reversed inputs would be faster than initially random inputs as each subdivision would be sorted faster, requiring less sorting each time. Initially sorted inputs would be faster than the reversed inputs since the lowest-level subdivisions are already sorted, unlike the reversed ones which would have to be sorted at each level, although less sorting is required than for initially random inputs.
-
-### With or Without Duplicates?
-Whether the input has duplicates or not should not affect the computation time of either programs. Upon review, I realised that my [useIntList.c](useIntList.c) could have been more efficient by inserting before a duplicate value instead of always after, which would have resolved the slight difference in computation time between the inputs with and without duplicate values. Furthermore, the difference in computation time for UNIX sort is negligible.
