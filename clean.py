@@ -21,6 +21,11 @@ for i in range(len(lines)):
         time = seconds + 60*minutes
         # Includes the edited line
         formatted_output.append("%.3f" % time + "\n")
+    elif "Trial" in lines[i]:
+        # Finds starting index for word "Trial"
+        t_index = lines[i].find("Trial")
+        # Removes the trial number information from lines
+        formatted_output.append(lines[i][:t_index-1] + ":\n")
     else:
         # Include lines that don't require editing
         formatted_output.append(lines[i])
