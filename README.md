@@ -1,4 +1,5 @@
 # Computation Time Comparison Between useIntSort and UNIX sort Algorithms
+[Link to repository](https://github.com/axieax/sort-algorithm-time)
 
 ## The Task
 The task involves completing the program [useIntList.c](useIntList.c), which reads and sorts a list of integers in increasing order using linked lists and insertion sort. We are then required to compare the average computation time of useIntList to the UNIX sort command.
