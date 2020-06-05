@@ -29,14 +29,14 @@ In general, initially random inputs took significantly longer to compute compare
 
 | Test | useIntSort Average Time (s) | UNIX sort Average Time (s) |
 | :--: | :-------------------------: | :------------------------: |
-| Initially Random with No Duplicates | 294.884 | 0.036 |
-| Initially Sorted with No Duplicates |	147.078 |	0.012 |
-| Initially Reversed with No Duplicates	| 146.805	| 0.015 |
-| Initially Random with Duplicates | 297.965 | 0.037 |
-| Initially Sorted with Duplicates | 147.239 |	0.013 |
-| Initially Reversed with Duplicates | 146.841 | 0.016 |
-| General: No Duplicates | 196.256 |	0.021 |
-| General: With Duplicates | 197.348 | 0.022 |
+| Initially Random with No Duplicates | 236.176 | 0.036 |
+| Initially Sorted with No Duplicates |	28.705 |	0.012 |
+| Initially Reversed with No Duplicates	| 28.735 | 0.014 |
+| Initially Random with Duplicates | 235.998 | 0.036 |
+| Initially Sorted with Duplicates | 28.720 |	0.013 |
+| Initially Reversed with Duplicates | 28.704 | 0.016 |
+| General: No Duplicates | 97.872 |	0.021 |
+| General: With Duplicates | 97.807 | 0.022 |
 
 *Please note: Graphs for the six different initial conditions can be found in [sort_results.xlsx](sort_results.xlsx).*
 
