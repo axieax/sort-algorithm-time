@@ -2,8 +2,7 @@
 
 ## The Task
 The task involves completing the program [useIntList.c](useIntList.c), which reads and sorts a list of integers in increasing order using linked lists and insertion sort. We are then required to compare the average computation time of useIntList to the UNIX sort command.
-My useIntSort program first checks whether it is possible to insert a number at the start of an ordered list (i.e. it is the smallest number), and similarly for the end (i.e. it is the biggest number), before a general insertion mechanic which places it in the appropriate increasing order position.  
-More information about the task can be found [here](https://cgi.cse.unsw.edu.au/~cs2521/20T2/labs/week01/index.php). 
+My useIntSort program first checks whether it is possible to insert a number at the start of an ordered list (i.e. it is the smallest number), and similarly for the end (i.e. it is the biggest number), before a general insertion mechanic which places it in the appropriate increasing order position. More information about the task can be found [here](https://cgi.cse.unsw.edu.au/~cs2521/20T2/labs/week01/index.php). 
 
 ## Hypothesis
 useIntSort uses an insertion sort algorithm, which is not very efficient compared to several other sorting algorithms. As a built-in UNIX command, it can be assumed that UNIX sort would be way more efficient. For useIntSort, initially reversed and sorted inputs should be significantly faster than initially random inputs since the computer does not have to traverse the linked list as far each time, just updating the front and end of the linked list respectively. These could potentially be calculated in linear instead of quadratic time. Furthermore for useIntSort, initially reversed inputs should be computed faster as the front of the list is checked first, and thus, less computing is necessary compared to the other tests. 
@@ -21,35 +20,22 @@ useIntSort uses an insertion sort algorithm, which is not very efficient compare
 
 As expected, the UNIX sort algorithm sorted the number inputs significantly faster than the useIntList program. The general insertion sort algorithm has a computational complexity of 𝒪(𝑛<sup>2</sup>) with 𝑛 representing the input size, as each number to be inserted is compared to the other n values in order to determine where it should be inserted, which is very inefficient. This can be seen by the curve below which fits a quadratic model (modelled using Vernier Logger Pro 3).
 
-![Average Results](/images/useIntList_avg.png)
+useIntSort Model           |  UNIX sort Model
+:-------------------------:|:-------------------------:
+![](/images/useIntSort_model.png)  |  ![](/images/unix_model.png)
 
 On the other hand, the UNIX sort algorithm uses an [External R-Way Merge Sort](http://vkundeti.blogspot.com/2008/03/tech-algorithmic-details-of-unix-sort.html) with a computational complexity of 𝒪((N/M)log(N/M)/log(R)). Analysing the graph below, I initially tried a ![#be69bd](https://via.placeholder.com/15/be69bd/000000?text=+) linear proportional model, which seemed to fit the curve pretty well. However, investigating the computational complexity of a regular merge sort algorithm, which is 𝒪(𝑛log𝑛) using divide-and-conquer techniques, I obtained a better model with ![#32a7a5](https://via.placeholder.com/15/32a7a5/000000?text=+) nlog(n) (having a lower RMSE value). It is difficult to determine the algorithm model based on the current dataset due to the small values of time obtained for the input sizes of 5000 to 250000. Further trials are necessary for a better model, especially with larger input sizes for larger values of time. 
-
-<p align="center">
-  <img width="460" height="300" src="ttp://www.fillmurray.com/460/300">
-</p>
-
-![Average Results](/images/sort_average_model.png)
 
 ### Further Observations:
 In general, initially random inputs took significantly longer to compute compared to initially sorted and reversed inputs, which were computed in similar times with initially sorted lists slightly faster. Whether the list had duplicates or not did not seem to affect the computation time. 
 
-| Test | useIntSort Average Time (s) | UNIX sort Average Time (s) |
-| :--: | :-------------------------: | :------------------------: |
-| Initially Random with No Duplicates | 236.176 | 0.036 |
-| Initially Sorted with No Duplicates |	28.705 |	0.012 |
-| Initially Reversed with No Duplicates	| 28.735 | 0.014 |
-| Initially Random with Duplicates | 235.998 | 0.036 |
-| Initially Sorted with Duplicates | 28.720 |	0.013 |
-| Initially Reversed with Duplicates | 28.704 | 0.016 |
-| | | |
-| General: No Duplicates | 97.872 |	0.021 |
-| General: With Duplicates | 97.807 | 0.022 |
-| General: Initially Random |	236.087 |	0.036 |
-| General: Initially Sorted	| 28.712 | 0.012 |
-| General: Initially Reversed | 28.719 | 0.015 |
 
-*Please note: More graphs, e.g. comparison between initial conditions, can be found in [sort_results.xlsx](sort_results.xlsx).*
+useIntSort Initial Conditions Comparison |  UNIX sort Initial Conditions Comparison
+:-------------------------:|:-------------------------:
+![](/images/useIntSort_initial.png)  |  ![](/images/unix_initial.png)
+
+
+*Please note: More graphs can be found in [sort_results.xlsx](sort_results.xlsx) in the "Analysis" worksheet.*
 
 ## Discussion
 As explained above, insertion sort is a rather inefficient method of sorting. UNIX sort, using a merge sort algorithm, triumphs useIntSort in computation time due to the algorithmic efficiency of divide-and-conquer (a thorough explanation can be found in my [Fourier Transforms Project Report](https://github.com/axieax/fourier/)).
