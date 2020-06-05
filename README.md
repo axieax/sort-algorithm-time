@@ -45,3 +45,6 @@ As expected, useIntSort dealt with sorted and reversed inputs significantly fast
 
 ### UNIX sort
 With the merge sort algorithm, sorted and reversed inputs would be faster than initially random inputs as each subdivision would be sorted faster, requiring less sorting each time. Initially sorted inputs would be faster than the reversed inputs since the lowest-level subdivisions are already sorted, unlike the reversed ones which would have to be sorted at each level, although less sorting is required than for initially random inputs.
+
+## Final Comments
+There are many ways of improving this project, especially in the extraction and cleaning of data. However, I initially designed the raw time data output with user readibility in mind, where lines could have been omitted for better manipulation of data. It is possible to condense the several steps into a single one, using Python to generate the specified tab-delineated format directly. Also, several adjustments in hopes of improving the efficiency of useIntList were made, resulting in quite some time wasted on wasted computations. 
