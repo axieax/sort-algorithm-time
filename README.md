@@ -35,7 +35,7 @@ useIntSort Initial Conditions Comparison |  UNIX sort Initial Conditions Compari
 :-------------------------:|:-------------------------:
 ![](/images/useIntSort_initial.png)  |  ![](/images/unix_initial.png)
 
-*Please note: More graphs can be found in [sort_results.xlsx](sort_results.xlsx) in the "Analysis" worksheet.*
+*Please note: more graphs can be found in [sort_results.xlsx](sort_results.xlsx) in the "Analysis" worksheet.*
 
 ## Discussion
 As explained above, insertion sort is a rather inefficient method of sorting. UNIX sort, using a merge sort algorithm, triumphs useIntSort in computation time due to the algorithmic efficiency of divide-and-conquer (a thorough explanation can be found in my [Fourier Transforms Project Report](https://github.com/axieax/fourier/)). 
